@@ -1,0 +1,20 @@
+CREATE TABLE shoeStore (id INTEGER PRIMARY KEY, mens_womens TEXT, size INTEGER, price INTEGER, color TEXT, type TEXT, heel_height_inches INTEGER);
+INSERT INTO shoeStore VALUES (1, "womens", 7, 30, "red", "pumps", 3);
+INSERT INTO shoeStore VALUES (2, "mens", 9, 50, "brown", "boat shoes", 0);
+INSERT INTO shoeStore VALUES (3, "womens", 6, 20, "yellow", "flip flops", 0);
+INSERT INTO shoeStore VALUES (4, "mens", 10, 70, "black", "boots", 1);
+INSERT INTO shoeStore VALUES (5, "womens", 9, 55, "brown", "boat shoes", 0);
+INSERT INTO shoeStore VALUES (6, "mens", 11, 100, "black", "dress shoes", 0);
+INSERT INTO shoeStore VALUES (7, "womens", 8, 45, "black", "pumps", 2);
+INSERT INTO shoeStore VALUES (8, "mens", 10.5, 35, "white", "flip flops", 0);
+INSERT INTO shoeStore VALUES (9, "womens", 5, 80, "brown", "boots", 2);
+INSERT INTO shoeStore VALUES (10, "mens", 7, 75, "brown", "dress shoes", 0);
+INSERT INTO shoeStore VALUES (11, "womens", 8, 80, "yellow", "pumps", 2);
+INSERT INTO shoeStore VALUES (12, "mens", 9, 25, "black", "flip flops", 0);
+INSERT INTO shoeStore VALUES (13, "womens", 4, 35, "white", "boots", 3);
+INSERT INTO shoeStore VALUES (14, "mens", 14, 85, "brown", "dress shoes", 0);
+INSERT INTO shoeStore VALUES (15, "womens", 7, 65, "brown", "dress shoes", 0);
+
+SELECT * FROM shoeStore ORDER BY price;
+SELECT COUNT(mens_womens) FROM shoeStore WHERE mens_womens= "womens";
+SELECT COUNT(mens_womens) FROM shoeStore WHERE mens_womens= "mens";
