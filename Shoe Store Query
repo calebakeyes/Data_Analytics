@@ -16,5 +16,5 @@ INSERT INTO shoeStore VALUES (14, "mens", 14, 85, "brown", "dress shoes", 0);
 INSERT INTO shoeStore VALUES (15, "womens", 7, 65, "brown", "dress shoes", 0);
 
 SELECT * FROM shoeStore ORDER BY price;
-SELECT COUNT(mens_womens) FROM shoeStore WHERE mens_womens= "womens";
-SELECT COUNT(mens_womens) FROM shoeStore WHERE mens_womens= "mens";
+SELECT COUNT(mens_womens) AS Number_Womens_Shoes FROM shoeStore WHERE mens_womens= "womens";
+SELECT COUNT(mens_womens) AS Number_Mens_Shoes FROM shoeStore WHERE mens_womens= "mens";
